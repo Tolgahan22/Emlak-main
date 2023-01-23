@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>61447893289-37mqu2f31d4jjbpcq28ro6sfro7gj4bq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.61447893289-37mqu2f31d4jjbpcq28ro6sfro7gj4bq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB89UeGgAe_AMt-9I3ExVxhnhvMJHWAhpI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>61447893289</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Tolgahan.Emlak</string>
+	<key>PROJECT_ID</key>
+	<string>myappemlak</string>
+	<key>STORAGE_BUCKET</key>
+	<string>myappemlak.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:61447893289:ios:92d990222d0b3b3f590738</string>
+</dict>
+</plist>
