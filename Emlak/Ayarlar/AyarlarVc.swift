@@ -14,12 +14,15 @@ class AyarlarVc: UIViewController {
     
     
     @IBOutlet weak var addUserId: UITextField!
-    
-    
     @IBOutlet weak var addUserPass: UITextField!
-    
-    
     @IBOutlet weak var Map: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var addClicledOut: UIButton!
+    @IBOutlet weak var adSoy: UITextField!
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var userTableView: UITableView!
+    var listUserIdArray = [String]()
+    var currentUserIdArray = [String]()
     
     func makeAlert(title:String, message:String){
             let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
@@ -30,30 +33,91 @@ class AyarlarVc: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        
+        addUserId.isHidden = true
+        addUserPass.isHidden = true
+        Map.isHidden = true
+        logoutButton.isHidden = true
+        addClicledOut.isHidden = true
+        adSoy.isHidden = true
+        label.isHidden = true
+        userTableView.isHidden = true
+        getUserList ()
     }
     
+    
+    func getUserList () {
+        print("ilkbaşarılı")
+            let seconds = 1.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                print("2.bas")
+                let db = Firestore.firestore()
+                db.collection("Users").addSnapshotListener { [self] snapShot, errorSnapshot in
+                    if errorSnapshot != nil {
+                        print(errorSnapshot?.localizedDescription ?? "Hata")
+                    } else {
+                        if snapShot?.isEmpty != true {
+                            for i in snapShot!.documents{
+                                if let userId = i.get("userId") as? String{
+                                    self.listUserIdArray.append(userId)
+                                }
+                            }
+                        }
+                    }
+                    print(self.listUserIdArray)
+                }
+                // current user datası çekip boş ise admin girişi olduğunu dolu ise kullanıcı girişi olduğunu algılayacak ve işlem yapacak.
+                db.collection("currentUser").addSnapshotListener { snapShotCurrent, errorCurrent in
+                    if errorCurrent != nil {
+                        print(errorCurrent?.localizedDescription ?? "Current User Çekerken Hata")
+                    } else {
+                        if snapShotCurrent?.isEmpty != true {
+                            for a in snapShotCurrent!.documents {
+                                if let currentId = a.get("currentUser") as? String{
+                                    self.currentUserIdArray.append(currentId)
+                                }
+                            }
+                        }
+                    }
+                    if self.currentUserIdArray.isEmpty == true {
+                        print("Mevcut kullanıcı admin") // Admin tüm içeriğe erişeceği için tüm hidden'lar false olacak
+                        self.addUserId.isHidden = false
+                        self.addUserPass.isHidden = false
+                        self.Map.isHidden = false
+                        self.logoutButton.isHidden = false
+                        self.addClicledOut.isHidden = false
+                        self.adSoy.isHidden = false
+                        self.label.isHidden = false
+                        self.userTableView.isHidden = false
+                    } else {
+                        print("Mevcut kullanıcı (self.currentUserIdArray[0])") // Kullanıcı için tüm kodlar buraya
+                        self.logoutButton.isHidden = false
+                    }
+                }
+     
+            }
+        }
 
     @IBAction func addClicked(_ sender: Any) {
         let db = Firestore.firestore()
-        var dbref : DocumentReference? = nil
-        let dbArray = ["user":addUserId.text! , "pass":addUserPass.text!] as [String : Any]
-        if addUserId.text == "" && addUserPass.text == "" {
-            makeAlert(title: "Error", message: "Alanları Doldurun.")
-        }else{
-            db.collection("users").addDocument(data: dbArray) { usersadderror in
-                if usersadderror != nil{
-                    self.makeAlert(title: "Error", message: usersadderror?.localizedDescription ?? "Error.")
-                }else{
-                    self.makeAlert(title: "Başarılı", message: "Kayit Başarılı")
+        let dbArray = ["userId" : addUserId.text!, "userPass" : addUserPass.text!, "userName" : adSoy.text! ] as [String : Any]
+        if addUserId.text == "" && addUserPass.text == "" && adSoy.text == ""{
+                    self.makeAlert(title: "Hata", message: "Boşlukları doldur.")
+                } else {
+                    db.collection("Users").addDocument(data: dbArray) { errorUserAdd in
+                        if errorUserAdd != nil {
+                            self.makeAlert(title: "Hata", message: errorUserAdd?.localizedDescription ?? "Hata")
+                        } else {
+                            self.makeAlert(title: "Başarılı", message: "Kullanıcı eklendi")
+                        }
+                    }
                 }
-            }
-        }
-        
-  
-        
+                addUserId.text = ""
+                addUserPass.text = ""
+                adSoy.text = ""
     }
+
+
     
     
 

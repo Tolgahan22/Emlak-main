@@ -32,6 +32,7 @@ class Anasayfa: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.Baslik.text = "merhaba dünyalı merkez akçayda"
         cell.fiyat.text = "1600000"
         cell.odaSayisi.text = "3+1"
+        cell.yer.text = "Sarıkız"
         
         
         return cell
