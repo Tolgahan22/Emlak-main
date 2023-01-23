@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41032E6E297C673400F0E6A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E6D297C673400F0E6A9 /* AppDelegate.swift */; };
+		41032E70297C673400F0E6A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E6F297C673400F0E6A9 /* SceneDelegate.swift */; };
+		41032E72297C673400F0E6A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E71297C673400F0E6A9 /* ViewController.swift */; };
+		41032E75297C673400F0E6A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41032E73297C673400F0E6A9 /* Main.storyboard */; };
+		41032E77297C673500F0E6A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41032E76297C673500F0E6A9 /* Assets.xcassets */; };
+		41032E7A297C673500F0E6A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41032E78297C673500F0E6A9 /* LaunchScreen.storyboard */; };
+		41032E85297C6AF100F0E6A9 /* Anasayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E84297C6AF100F0E6A9 /* Anasayfa.swift */; };
+		41032E8A297C7A7100F0E6A9 /* AyarlarVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E89297C7A7100F0E6A9 /* AyarlarVc.swift */; };
+		41032E8E297C87F000F0E6A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41032E8D297C87F000F0E6A9 /* GoogleService-Info.plist */; };
+		41032E92297C8E5500F0E6A9 /* DetayVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E91297C8E5500F0E6A9 /* DetayVc.swift */; };
+		41032E96297C8EBB00F0E6A9 /* MapVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E95297C8EBB00F0E6A9 /* MapVc.swift */; };
+		41032E99297C8F0B00F0E6A9 /* Ekleme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E98297C8F0B00F0E6A9 /* Ekleme.swift */; };
+		41032E9B297C9A0A00F0E6A9 /* Anasayfacell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E9A297C9A0A00F0E6A9 /* Anasayfacell.swift */; };
+		41032E9D297CAC5300F0E6A9 /* png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 41032E9C297CAC5300F0E6A9 /* png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png */; };
+		41032E9F297CACF500F0E6A9 /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41032E9E297CACF500F0E6A9 /* maxresdefault.jpg */; };
+		41786EE65827F15782F6E51A /* Pods_Emlak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1538CF2BE00E2BF355AB9F /* Pods_Emlak.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41032E6A297C673400F0E6A9 /* Emlak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emlak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41032E6D297C673400F0E6A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41032E6F297C673400F0E6A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41032E71297C673400F0E6A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41032E74297C673400F0E6A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41032E76297C673500F0E6A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41032E79297C673500F0E6A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41032E7B297C673500F0E6A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41032E84297C6AF100F0E6A9 /* Anasayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anasayfa.swift; sourceTree = "<group>"; };
+		41032E89297C7A7100F0E6A9 /* AyarlarVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyarlarVc.swift; sourceTree = "<group>"; };
+		41032E8D297C87F000F0E6A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41032E91297C8E5500F0E6A9 /* DetayVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayVc.swift; sourceTree = "<group>"; };
+		41032E95297C8EBB00F0E6A9 /* MapVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVc.swift; sourceTree = "<group>"; };
+		41032E98297C8F0B00F0E6A9 /* Ekleme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ekleme.swift; sourceTree = "<group>"; };
+		41032E9A297C9A0A00F0E6A9 /* Anasayfacell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anasayfacell.swift; sourceTree = "<group>"; };
+		41032E9C297CAC5300F0E6A9 /* png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png"; sourceTree = "<group>"; };
+		41032E9E297CACF500F0E6A9 /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maxresdefault.jpg; sourceTree = "<group>"; };
+		8E1538CF2BE00E2BF355AB9F /* Pods_Emlak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emlak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9D3FF6B3810B8E1EBCAB8F /* Pods-Emlak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emlak.release.xcconfig"; path = "Target Support Files/Pods-Emlak/Pods-Emlak.release.xcconfig"; sourceTree = "<group>"; };
+		FD832A57E1586DFAB31C60CA /* Pods-Emlak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emlak.debug.xcconfig"; path = "Target Support Files/Pods-Emlak/Pods-Emlak.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41032E67297C673400F0E6A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41786EE65827F15782F6E51A /* Pods_Emlak.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32D6215D2A7BC9A1C2EA7269 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E1538CF2BE00E2BF355AB9F /* Pods_Emlak.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41032E61297C673400F0E6A9 = {
+			isa = PBXGroup;
+			children = (
+				41032E6C297C673400F0E6A9 /* Emlak */,
+				41032E6B297C673400F0E6A9 /* Products */,
+				E78E69CD8D542F09496B9835 /* Pods */,
+				32D6215D2A7BC9A1C2EA7269 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		41032E6B297C673400F0E6A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41032E6A297C673400F0E6A9 /* Emlak.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41032E6C297C673400F0E6A9 /* Emlak */ = {
+			isa = PBXGroup;
+			children = (
+				41032E97297C8EF400F0E6A9 /* Ekleme */,
+				41032E94297C8E9C00F0E6A9 /* Map */,
+				41032E93297C8E6000F0E6A9 /* Detay */,
+				41032E88297C7A5600F0E6A9 /* Ayarlar */,
+				41032E83297C6AC700F0E6A9 /* Anasayfa */,
+				41032E82297C67E400F0E6A9 /* Other */,
+				41032E81297C67C100F0E6A9 /* Login */,
+				41032E73297C673400F0E6A9 /* Main.storyboard */,
+				41032E7B297C673500F0E6A9 /* Info.plist */,
+				41032E8D297C87F000F0E6A9 /* GoogleService-Info.plist */,
+			);
+			path = Emlak;
+			sourceTree = "<group>";
+		};
+		41032E81297C67C100F0E6A9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				41032E71297C673400F0E6A9 /* ViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		41032E82297C67E400F0E6A9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				41032E76297C673500F0E6A9 /* Assets.xcassets */,
+				41032E9E297CACF500F0E6A9 /* maxresdefault.jpg */,
+				41032E9C297CAC5300F0E6A9 /* png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png */,
+				41032E78297C673500F0E6A9 /* LaunchScreen.storyboard */,
+				41032E6D297C673400F0E6A9 /* AppDelegate.swift */,
+				41032E6F297C673400F0E6A9 /* SceneDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		41032E83297C6AC700F0E6A9 /* Anasayfa */ = {
+			isa = PBXGroup;
+			children = (
+				41032E84297C6AF100F0E6A9 /* Anasayfa.swift */,
+				41032E9A297C9A0A00F0E6A9 /* Anasayfacell.swift */,
+			);
+			path = Anasayfa;
+			sourceTree = "<group>";
+		};
+		41032E88297C7A5600F0E6A9 /* Ayarlar */ = {
+			isa = PBXGroup;
+			children = (
+				41032E89297C7A7100F0E6A9 /* AyarlarVc.swift */,
+			);
+			path = Ayarlar;
+			sourceTree = "<group>";
+		};
+		41032E93297C8E6000F0E6A9 /* Detay */ = {
+			isa = PBXGroup;
+			children = (
+				41032E91297C8E5500F0E6A9 /* DetayVc.swift */,
+			);
+			path = Detay;
+			sourceTree = "<group>";
+		};
+		41032E94297C8E9C00F0E6A9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				41032E95297C8EBB00F0E6A9 /* MapVc.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		41032E97297C8EF400F0E6A9 /* Ekleme */ = {
+			isa = PBXGroup;
+			children = (
+				41032E98297C8F0B00F0E6A9 /* Ekleme.swift */,
+			);
+			path = Ekleme;
+			sourceTree = "<group>";
+		};
+		E78E69CD8D542F09496B9835 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD832A57E1586DFAB31C60CA /* Pods-Emlak.debug.xcconfig */,
+				CE9D3FF6B3810B8E1EBCAB8F /* Pods-Emlak.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41032E69297C673400F0E6A9 /* Emlak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41032E7E297C673500F0E6A9 /* Build configuration list for PBXNativeTarget "Emlak" */;
+			buildPhases = (
+				191633E0066D01B34706858F /* [CP] Check Pods Manifest.lock */,
+				41032E66297C673400F0E6A9 /* Sources */,
+				41032E67297C673400F0E6A9 /* Frameworks */,
+				41032E68297C673400F0E6A9 /* Resources */,
+				15CD520F81AD952E53CD9153 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Emlak;
+			productName = Emlak;
+			productReference = 41032E6A297C673400F0E6A9 /* Emlak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41032E62297C673400F0E6A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					41032E69297C673400F0E6A9 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 41032E65297C673400F0E6A9 /* Build configuration list for PBXProject "Emlak" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41032E61297C673400F0E6A9;
+			productRefGroup = 41032E6B297C673400F0E6A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41032E69297C673400F0E6A9 /* Emlak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41032E68297C673400F0E6A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41032E9D297CAC5300F0E6A9 /* png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png in Resources */,
+				41032E9F297CACF500F0E6A9 /* maxresdefault.jpg in Resources */,
+				41032E7A297C673500F0E6A9 /* LaunchScreen.storyboard in Resources */,
+				41032E77297C673500F0E6A9 /* Assets.xcassets in Resources */,
+				41032E8E297C87F000F0E6A9 /* GoogleService-Info.plist in Resources */,
+				41032E75297C673400F0E6A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15CD520F81AD952E53CD9153 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emlak/Pods-Emlak-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Emlak/Pods-Emlak-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Emlak/Pods-Emlak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		191633E0066D01B34706858F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Emlak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41032E66297C673400F0E6A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41032E72297C673400F0E6A9 /* ViewController.swift in Sources */,
+				41032E85297C6AF100F0E6A9 /* Anasayfa.swift in Sources */,
+				41032E6E297C673400F0E6A9 /* AppDelegate.swift in Sources */,
+				41032E9B297C9A0A00F0E6A9 /* Anasayfacell.swift in Sources */,
+				41032E99297C8F0B00F0E6A9 /* Ekleme.swift in Sources */,
+				41032E70297C673400F0E6A9 /* SceneDelegate.swift in Sources */,
+				41032E96297C8EBB00F0E6A9 /* MapVc.swift in Sources */,
+				41032E8A297C7A7100F0E6A9 /* AyarlarVc.swift in Sources */,
+				41032E92297C8E5500F0E6A9 /* DetayVc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		41032E73297C673400F0E6A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41032E74297C673400F0E6A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41032E78297C673500F0E6A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41032E79297C673500F0E6A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41032E7C297C673500F0E6A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41032E7D297C673500F0E6A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41032E7F297C673500F0E6A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD832A57E1586DFAB31C60CA /* Pods-Emlak.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 375Q233TBW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Emlak/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tolgahan.Emlak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41032E80297C673500F0E6A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE9D3FF6B3810B8E1EBCAB8F /* Pods-Emlak.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 375Q233TBW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Emlak/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tolgahan.Emlak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41032E65297C673400F0E6A9 /* Build configuration list for PBXProject "Emlak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41032E7C297C673500F0E6A9 /* Debug */,
+				41032E7D297C673500F0E6A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41032E7E297C673500F0E6A9 /* Build configuration list for PBXNativeTarget "Emlak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41032E7F297C673500F0E6A9 /* Debug */,
+				41032E80297C673500F0E6A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41032E62297C673400F0E6A9 /* Project object */;
+}
