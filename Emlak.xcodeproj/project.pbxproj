@@ -15,7 +15,6 @@
 		41032E7A297C673500F0E6A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41032E78297C673500F0E6A9 /* LaunchScreen.storyboard */; };
 		41032E85297C6AF100F0E6A9 /* Anasayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E84297C6AF100F0E6A9 /* Anasayfa.swift */; };
 		41032E8A297C7A7100F0E6A9 /* AyarlarVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E89297C7A7100F0E6A9 /* AyarlarVc.swift */; };
-		41032E8E297C87F000F0E6A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41032E8D297C87F000F0E6A9 /* GoogleService-Info.plist */; };
 		41032E92297C8E5500F0E6A9 /* DetayVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E91297C8E5500F0E6A9 /* DetayVc.swift */; };
 		41032E96297C8EBB00F0E6A9 /* MapVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E95297C8EBB00F0E6A9 /* MapVc.swift */; };
 		41032E99297C8F0B00F0E6A9 /* Ekleme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E98297C8F0B00F0E6A9 /* Ekleme.swift */; };
@@ -23,6 +22,7 @@
 		41032E9D297CAC5300F0E6A9 /* png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 41032E9C297CAC5300F0E6A9 /* png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png */; };
 		41032E9F297CACF500F0E6A9 /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41032E9E297CACF500F0E6A9 /* maxresdefault.jpg */; };
 		41786EE65827F15782F6E51A /* Pods_Emlak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1538CF2BE00E2BF355AB9F /* Pods_Emlak.framework */; };
+		41866C44297F2A9E0017F786 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41866C43297F2A9E0017F786 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,13 +36,13 @@
 		41032E7B297C673500F0E6A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41032E84297C6AF100F0E6A9 /* Anasayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anasayfa.swift; sourceTree = "<group>"; };
 		41032E89297C7A7100F0E6A9 /* AyarlarVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyarlarVc.swift; sourceTree = "<group>"; };
-		41032E8D297C87F000F0E6A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41032E91297C8E5500F0E6A9 /* DetayVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayVc.swift; sourceTree = "<group>"; };
 		41032E95297C8EBB00F0E6A9 /* MapVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVc.swift; sourceTree = "<group>"; };
 		41032E98297C8F0B00F0E6A9 /* Ekleme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ekleme.swift; sourceTree = "<group>"; };
 		41032E9A297C9A0A00F0E6A9 /* Anasayfacell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anasayfacell.swift; sourceTree = "<group>"; };
 		41032E9C297CAC5300F0E6A9 /* png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png"; sourceTree = "<group>"; };
 		41032E9E297CACF500F0E6A9 /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maxresdefault.jpg; sourceTree = "<group>"; };
+		41866C43297F2A9E0017F786 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E1538CF2BE00E2BF355AB9F /* Pods_Emlak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emlak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D3FF6B3810B8E1EBCAB8F /* Pods-Emlak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emlak.release.xcconfig"; path = "Target Support Files/Pods-Emlak/Pods-Emlak.release.xcconfig"; sourceTree = "<group>"; };
 		FD832A57E1586DFAB31C60CA /* Pods-Emlak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emlak.debug.xcconfig"; path = "Target Support Files/Pods-Emlak/Pods-Emlak.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 				41032E81297C67C100F0E6A9 /* Login */,
 				41032E73297C673400F0E6A9 /* Main.storyboard */,
 				41032E7B297C673500F0E6A9 /* Info.plist */,
-				41032E8D297C87F000F0E6A9 /* GoogleService-Info.plist */,
+				41866C43297F2A9E0017F786 /* GoogleService-Info.plist */,
 			);
 			path = Emlak;
 			sourceTree = "<group>";
@@ -235,10 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				41032E9D297CAC5300F0E6A9 /* png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png in Resources */,
+				41866C44297F2A9E0017F786 /* GoogleService-Info.plist in Resources */,
 				41032E9F297CACF500F0E6A9 /* maxresdefault.jpg in Resources */,
 				41032E7A297C673500F0E6A9 /* LaunchScreen.storyboard in Resources */,
 				41032E77297C673500F0E6A9 /* Assets.xcassets in Resources */,
-				41032E8E297C87F000F0E6A9 /* GoogleService-Info.plist in Resources */,
 				41032E75297C673400F0E6A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,7 +456,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,7 +486,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

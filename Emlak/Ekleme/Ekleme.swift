@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Firebase
 
 class Ekleme: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    
 
     
     

@@ -3,32 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>61447893289-37mqu2f31d4jjbpcq28ro6sfro7gj4bq.apps.googleusercontent.com</string>
+	<string>40468859107-pu6dla7qa92b9i4f4ivtmietl3car0vq.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.61447893289-37mqu2f31d4jjbpcq28ro6sfro7gj4bq</string>
+	<string>com.googleusercontent.apps.40468859107-pu6dla7qa92b9i4f4ivtmietl3car0vq</string>
 	<key>API_KEY</key>
-	<string>AIzaSyB89UeGgAe_AMt-9I3ExVxhnhvMJHWAhpI</string>
+	<string>AIzaSyDKMvVLoQjkXI4S2gys95q0ArqPVLk6rcg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>61447893289</string>
+	<string>40468859107</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.Tolgahan.Emlak</string>
 	<key>PROJECT_ID</key>
-	<string>myappemlak</string>
+	<string>emlak-app-5abc2</string>
 	<key>STORAGE_BUCKET</key>
-	<string>myappemlak.appspot.com</string>
+	<string>emlak-app-5abc2.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:61447893289:ios:92d990222d0b3b3f590738</string>
+	<string>1:40468859107:ios:5a1a978b67ce0a01d39dd6</string>
 </dict>
 </plist>
