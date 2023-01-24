@@ -118,7 +118,29 @@ class AyarlarVc: UIViewController {
     }
 
 
+    @IBAction func cikisCliked(_ sender: Any) {
+        Anasayfa.Helper.locationManager.stopUpdatingLocation()
+        let dbClear = Firestore.firestore()
+        dbClear.collection("currentUser").document("currentUserData").delete() { errorClear in
+            if errorClear != nil {
+                print("Mevcut kullanıcı silinemedi. HATA!")
+            } else {
+                
+                print("Mevcut kullanıcı silme başarılı.")
+            }
+        }
+
+        let dbClearAuth = Auth.auth()
+        do {
+            try dbClearAuth.signOut()
+            print("Admin çıkışı başarılı")
+        } catch {
+            print("Auth kullanıcısı çıkış yapamadı.")
+        }
+    }
+    
     
     
 
 }
+    

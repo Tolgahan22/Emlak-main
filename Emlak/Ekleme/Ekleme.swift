@@ -8,10 +8,13 @@
 import UIKit
 import Firebase
 
+
 class Ekleme: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     
-
+    @IBOutlet weak var firstPhotoView: UIImageView!
+    @IBOutlet weak var lastPhotoView: UIImageView!
+    @IBOutlet weak var addPhotoView: UIImageView!
     
     
     let oda = ["1+0","1+1","2+0","2+1","3+0","3+1","4+1","4+2"]
@@ -28,8 +31,13 @@ class Ekleme: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         yerPicker.dataSource = self
         odaPicker.dataSource = self
         odaPicker.delegate = self
-
+       
+     
     }
+    
+    
+    
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

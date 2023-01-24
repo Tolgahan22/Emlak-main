@@ -9,6 +9,8 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
+    
+    
    
     
     var newDict = [String : String]()
@@ -21,6 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         clearCurrentUserData()
         getUserList ()
+        
         
         
     }
@@ -98,6 +101,7 @@ class ViewController: UIViewController {
                 if errorClear != nil {
                     print("Mevcut kullanıcı silinemedi. HATA!")
                 } else {
+                    
                     print("Mevcut kullanıcı silme başarılı.")
                 }
             }
@@ -110,6 +114,7 @@ class ViewController: UIViewController {
                 print("Auth kullanıcısı çıkış yapamadı.")
             }
         }
+    
     
 
         
