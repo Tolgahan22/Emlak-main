@@ -9,6 +9,7 @@ import UIKit
 import MapKit
 
 class MapVc: UIViewController, UITableViewDelegate, UITableViewDataSource {
+  
 
     @IBOutlet weak var tableView: UITableView!
     

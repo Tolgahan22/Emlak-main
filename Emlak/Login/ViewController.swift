@@ -11,6 +11,7 @@ import Firebase
 class ViewController: UIViewController {
     
     
+    
    
     
     var newDict = [String : String]()
@@ -21,8 +22,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        clearCurrentUserData()
-        getUserList ()
+        //clearCurrentUserData()
+        //getUserList ()
+        lists.init()
+        
         
         
         
@@ -75,7 +78,7 @@ class ViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
-    func getUserList () {
+   /* func getUserList () {
             let seconds = 1.0
             DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
                 let db = Firestore.firestore()
@@ -90,7 +93,7 @@ class ViewController: UIViewController {
                                 newDict[userId!] = passId!
                             }
                         }
-                        print(newDict)
+                        //print(newDict)
                     }
                 }
             }
@@ -114,7 +117,7 @@ class ViewController: UIViewController {
                 print("Auth kullanıcısı çıkış yapamadı.")
             }
         }
-    
+    */
     
 
         

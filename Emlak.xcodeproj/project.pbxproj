@@ -21,6 +21,7 @@
 		41032E9B297C9A0A00F0E6A9 /* Anasayfacell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032E9A297C9A0A00F0E6A9 /* Anasayfacell.swift */; };
 		41032E9D297CAC5300F0E6A9 /* png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 41032E9C297CAC5300F0E6A9 /* png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png */; };
 		41032E9F297CACF500F0E6A9 /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41032E9E297CACF500F0E6A9 /* maxresdefault.jpg */; };
+		415A0E3C298171A2006CC9D9 /* userGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415A0E3B298171A2006CC9D9 /* userGet.swift */; };
 		41786EE65827F15782F6E51A /* Pods_Emlak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1538CF2BE00E2BF355AB9F /* Pods_Emlak.framework */; };
 		41866C4A297F38480017F786 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41866C49297F38480017F786 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		41032E9A297C9A0A00F0E6A9 /* Anasayfacell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anasayfacell.swift; sourceTree = "<group>"; };
 		41032E9C297CAC5300F0E6A9 /* png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png"; sourceTree = "<group>"; };
 		41032E9E297CACF500F0E6A9 /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maxresdefault.jpg; sourceTree = "<group>"; };
+		415A0E3B298171A2006CC9D9 /* userGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userGet.swift; sourceTree = "<group>"; };
 		41866C49297F38480017F786 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E1538CF2BE00E2BF355AB9F /* Pods_Emlak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emlak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D3FF6B3810B8E1EBCAB8F /* Pods-Emlak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emlak.release.xcconfig"; path = "Target Support Files/Pods-Emlak/Pods-Emlak.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				41032E73297C673400F0E6A9 /* Main.storyboard */,
 				41032E7B297C673500F0E6A9 /* Info.plist */,
 				41866C49297F38480017F786 /* GoogleService-Info.plist */,
+				415A0E3B298171A2006CC9D9 /* userGet.swift */,
 			);
 			path = Emlak;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				41032E96297C8EBB00F0E6A9 /* MapVc.swift in Sources */,
 				41032E8A297C7A7100F0E6A9 /* AyarlarVc.swift in Sources */,
 				41032E92297C8E5500F0E6A9 /* DetayVc.swift in Sources */,
+				415A0E3C298171A2006CC9D9 /* userGet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +455,9 @@
 				DEVELOPMENT_TEAM = 375Q233TBW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Emlak/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "İzin Gerekli";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "İzin Gerek";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "İzin Gerekli";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -481,6 +488,9 @@
 				DEVELOPMENT_TEAM = 375Q233TBW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Emlak/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "İzin Gerekli";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "İzin Gerek";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "İzin Gerekli";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

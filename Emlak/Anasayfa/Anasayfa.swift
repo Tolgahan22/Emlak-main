@@ -14,6 +14,10 @@ class Anasayfa: UIViewController, UITableViewDelegate, UITableViewDataSource, CL
     struct Helper{
         static var locationManager = CLLocationManager()
     }
+
+        
+
+    
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -43,6 +47,8 @@ class Anasayfa: UIViewController, UITableViewDelegate, UITableViewDataSource, CL
         
         
         
+        
+        
     }
     
     //location
@@ -52,10 +58,10 @@ class Anasayfa: UIViewController, UITableViewDelegate, UITableViewDataSource, CL
         //print(location!.coordinate.longitude)
         latitudever = location!.coordinate.latitude
         longitudever = location!.coordinate.longitude
-        locWrite()
+       // locWrite()
     }
     //location firebase records
-    func locWrite() {
+    /*func locWrite() {
         let seconds = 1.0
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds){
             let db = Firestore.firestore()
@@ -75,7 +81,17 @@ class Anasayfa: UIViewController, UITableViewDelegate, UITableViewDataSource, CL
                 }
                 
                 if self.currentUserIdArray.isEmpty == true {
-                    print("Admin No Loc")
+                    let dbLocArray = ["longitude" : self.longitudever, "latitude" : self.latitudever] as [String : Double]
+                    db.collection("location admin").document("currentLocation").setData(dbLocArray) {
+                        errorloc in
+                        if errorloc != nil{
+                            print(errorloc?.localizedDescription ?? "Error")
+                        }else{
+                            print("Done")
+                        }
+                    }
+                    
+                
                 }else{
                     let dbLocArray = ["longitude" : self.longitudever, "latitude" : self.latitudever] as [String : Double]
                     db.collection("location\(self.mevcutKullancıLabel.text!)").document("currentLocation").setData(dbLocArray) {
@@ -94,7 +110,7 @@ class Anasayfa: UIViewController, UITableViewDelegate, UITableViewDataSource, CL
             
         }
     }
-    
+    */
     
     
     
@@ -128,7 +144,7 @@ class Anasayfa: UIViewController, UITableViewDelegate, UITableViewDataSource, CL
                         if snapShotCurrent?.isEmpty != true{
                             for cur in snapShotCurrent!.documents{
                                 self.currentId = cur.get("currentUser") as!  String
-                                print(self.currentId)
+                                //print(self.currentId)
                             }
                         }
                     }

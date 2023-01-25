@@ -10,8 +10,9 @@ import Firebase
 
 
 
-class AyarlarVc: UIViewController {
+class AyarlarVc: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+
     
     @IBOutlet weak var addUserId: UITextField!
     @IBOutlet weak var addUserPass: UITextField!
@@ -20,7 +21,8 @@ class AyarlarVc: UIViewController {
     @IBOutlet weak var addClicledOut: UIButton!
     @IBOutlet weak var adSoy: UITextField!
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var userTableView: UITableView!
+    
+    @IBOutlet weak var tableView: UITableView!
     var listUserIdArray = [String]()
     var currentUserIdArray = [String]()
     
@@ -33,6 +35,9 @@ class AyarlarVc: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //tableView
+        tableView.delegate = self
+        tableView.dataSource = self
         
         addUserId.isHidden = true
         addUserPass.isHidden = true
@@ -41,7 +46,7 @@ class AyarlarVc: UIViewController {
         addClicledOut.isHidden = true
         adSoy.isHidden = true
         label.isHidden = true
-        userTableView.isHidden = true
+        tableView.isHidden = true
         getUserList ()
     }
     
@@ -88,7 +93,7 @@ class AyarlarVc: UIViewController {
                         self.addClicledOut.isHidden = false
                         self.adSoy.isHidden = false
                         self.label.isHidden = false
-                        self.userTableView.isHidden = false
+                        self.tableView.isHidden = false
                     } else {
                         print("Mevcut kullanıcı (self.currentUserIdArray[0])") // Kullanıcı için tüm kodlar buraya
                         self.logoutButton.isHidden = false
@@ -137,6 +142,20 @@ class AyarlarVc: UIViewController {
         } catch {
             print("Auth kullanıcısı çıkış yapamadı.")
         }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listUserIdArray.count
+        
+    }
+        
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = UITableViewCell()
+            cell.textLabel?.text = "Test"
+            return cell
+        
+
     }
     
     
